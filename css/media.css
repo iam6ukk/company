@@ -1,0 +1,154 @@
+@media screen and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* 태블릿 규격*/
+@media screen and (min-width: 768px) and (max-widh: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* 모바일 규격 */
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* mobile nav menu */
+  header .mobile_nav {
+    display: block;
+    width: 100%;
+  }
+  header .mobile_nav .mobile_logo {
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  header .mobile_nav .mobile_menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+  .mobile_menu ul {
+    text-align: center;
+    padding-top: 300px;
+  }
+  .mobile_menu li a {
+    display: block;
+    color: #000;
+    font: normal 25px/1 "arial";
+    padding: 30px 40px;
+  }
+  .mobile_menu li a:hover {
+    color: #000;
+    font-weight: bold;
+  }
+
+  header .inner {
+    width: 100%;
+  }
+  header .inner h1 {
+    left: 20px;
+    bottom: 31px;
+  }
+  header .inner #gnb {
+    display: none;
+  }
+
+  /* visual */
+  figure .inner h1 {
+    font-size: 70px;
+    margin-left: 20px;
+  }
+  figure .inner p {
+    width: 50%;
+    margin-left: 20px;
+  }
+  figure .inner a {
+    width: 300px;
+    height: 60px;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 3.5;
+  }
+
+  /* news */
+  section {
+    padding: 150px 0px;
+  }
+  section .inner {
+    width: 100%;
+  }
+  section .inner h1 {
+    font: bold 26px/1 "arial";
+  }
+  section .inner .wrap {
+    padding: 0px;
+  }
+  section .inner .wrap article {
+    display: block;
+    width: 100%;
+    margin-left: 4.4%;
+    text-align: center;
+  }
+
+  article .pic {
+    width: 91%;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  article .desc {
+    text-align: center;
+    margin-right: 50px;
+  }
+  article .desc h2 {
+    margin-bottom: 15px;
+  }
+
+  article .desc h2 a {
+    font: bold 20px/1 "arial";
+    color: #555;
+  }
+  article .desc p {
+    font: 16px/1.4 "arial";
+    margin-bottom: 50px;
+  }
+  article:nth-child(4) .desc p {
+    margin-bottom: 0px;
+  }
+
+  article:nth-child(2n) .pic {
+    order: 1;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+  article:nth-child(2n) .desc {
+    text-align: center;
+  }
+
+  /* footer */
+  footer {
+    padding: 70px 0px;
+  }
+
+  footer .inner {
+    width: 100%;
+    margin-left: 20px;
+  }
+  footer .inner .upper ul {
+    float: right;
+    margin-right: 40px;
+  }
+  footer .inner .upper ul li {
+    float: left;
+  }
+}
