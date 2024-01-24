@@ -39,7 +39,7 @@
   }
   .mobile_menu ul {
     text-align: center;
-    padding-top: 300px;
+    padding-top: 150px;
   }
   .mobile_menu li a {
     display: block;
@@ -57,6 +57,7 @@
   }
   header .inner h1 {
     left: 20px;
+
     bottom: 31px;
   }
   header .inner #gnb {
@@ -64,13 +65,15 @@
   }
 
   /* visual */
+
   figure .inner h1 {
-    font-size: 70px;
+    font-size: 40px;
     margin-left: 20px;
   }
   figure .inner p {
-    width: 50%;
+    width: 30%;
     margin-left: 20px;
+    margin-bottom: 40px;
   }
   figure .inner a {
     width: 300px;
@@ -144,11 +147,22 @@
     width: 100%;
     margin-left: 20px;
   }
+  footer .inner .upper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #777;
+    padding-bottom: 20px;
+  }
   footer .inner .upper ul {
     float: right;
-    margin-right: 40px;
   }
   footer .inner .upper ul li {
     float: left;
+    margin-left: 15px;
+  }
+
+  footer .inner .upper ul li a {
+    font: bold 12px/1 "arial";
   }
 }

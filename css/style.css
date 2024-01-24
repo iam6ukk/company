@@ -1,8 +1,23 @@
 @charset 'utf-8';
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Pretendard";
   box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ul,
 ol {
@@ -13,59 +28,54 @@ a {
 }
 
 /* header */
-.mobile_nav {
-  display: none;
-}
 header {
+  z-index: 100;
   width: 100%;
+
+  padding: 30px 265px 18px 265px;
   border-bottom: 1px solid #ddd;
+  background: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 header .inner {
-  width: 1180px;
-  height: 100px;
-  margin: 0px auto;
-  position: relative;
-  /* 자식 absolute 요소의 기준점 설정 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header .inner h1 {
-  position: absolute;
-  left: 0px;
-  bottom: 15px;
-}
+
 header .inner h1 a {
-  font: bold 24px/1 "arial";
   color: #444;
 }
 
 header .inner #gnb {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+  display: flex;
 }
-header .inner #gnb li {
-  float: left;
-}
+
 header .inner #gnb li a {
-  display: block;
-  float: bold 15px/1 "arial";
-  color: #555;
+  color: #444;
+  /* margin-left: 30px; */
+  font-size: 1.2em;
   padding: 20px 40px;
   transition: all 0.5s;
 }
 header .inner #gnb li a:hover {
-  background: #555;
+  background: #666;
   color: #fff;
+}
+header .mobile_nav {
+  display: none;
 }
 
 /* visual */
 figure {
   width: 100%;
-  height: calc(100vh - 100px);
-  /* 전체 브라우저 높이에서 px 만큼 뺌*/
-  background: #000;
+  height: 100vh;
   position: relative;
-  overflow: hidden;
-  padding-top: 250px;
+  background: #000;
+  padding-top: 150px;
 }
 figure video {
   object-fit: cover;
@@ -77,208 +87,169 @@ figure video {
   left: 0px;
 }
 figure .inner {
-  width: 1180px;
+  width: 60%;
+  height: 73%;
   margin: 0px auto;
-  position: relative;
+  position: absolute;
+
+  padding-left: 10%;
 }
 figure .inner h1 {
-  font: normal 120px/1 "arial";
   color: #fff;
+  font-size: 5em;
+  font-weight: normal;
+
+  margin-top: 10%;
+  line-height: 75px;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 figure .inner p {
-  font: 16px/1.4 "arial";
+  width: 70%;
+  font-size: 1.2em;
   color: #888;
+  margin-left: 30px;
   margin-bottom: 60px;
 }
+
 figure .inner a {
   display: block;
   width: 400px;
-  height: 50px;
+  height: 60px;
+  margin-left: 30px;
+  padding: 15px 35px;
   border: 1px solid #bbb;
-  font: normal 14px/30px "arial";
+  font-size: 1.2em;
   color: #fff;
   text-align: center;
-  line-height: 3.3;
+  line-height: 1.4;
   letter-spacing: 1px;
   transition: all 0.5s;
 }
-figure .inner a:hover {
-  background: #fff;
-  color: #555;
-}
 
 /* news */
-
 section {
   width: 100%;
-  padding: 200px 0px;
 }
 section .inner h1 {
-  font: bold 30px/1 "arial";
-  color: #555;
+  font-size: 1.6em;
   text-align: center;
-  margin-bottom: 50px;
-}
-
-section .inner .wrap {
-  width: 100%;
-  padding: 0px 350px 0px 350px;
-  margin: auto;
-}
-section .inner .wrap article {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 60px;
-}
-section .inner .wrap article:last-child {
-  margin-bottom: 0px;
-}
-article .desc {
-  display: block;
-  text-align: left;
-}
-article .desc h2 {
+  margin-top: 150px;
   margin-bottom: 30px;
+  font-weight: 500;
 }
-article h2 a {
-  font: bold 26px/1 "arial";
-  color: #555;
+section .wrap {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
 }
-article p {
-  font: 20px/1.4 "arial";
-  color: #777;
+section .wrap article {
+  width: 500px;
+  margin: 20px;
+  border: 15px solid #dbdbdb;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-article:nth-child(2n) .pic {
-  order: 2;
-  margin-left: 50px;
-  margin-right: 0px;
-}
-article:nth-child(2n) .desc {
-  text-align: right;
-}
-
-article .pic {
-  width: 700px;
-  height: 500px;
-  background: #333;
+section .wrap article .pic {
   position: relative;
-  overflow: hidden;
-  margin-right: 50px;
+  width: 100%;
+  height: 300px;
 }
-article .pic img {
+
+section .wrap article .pic img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
-/* section {
-  width: 100%;
-  padding: 200px 0px;
-}
-section .inner {
-  width: 1180px;
-  margin: 0px auto;
-}
-section .inner h1 {
-  font: bold 24px/1 "arial";
-  color: #555;
+section .wrap article .desc {
   text-align: center;
-  margin-bottom: 50px;
 }
-section .inner .wrap {
-  width: 100%;
+
+section .wrap article .desc h2 {
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-section .inner .wrap::after {
-  
-  content: "";
-  display: block;
-  clear: both;
-}
-section .inner .wrap article {
-  width: 280px;
-  float: left;
-  margin-right: 20px;
-}
-section .inner .wrap article:last-child {
-  margin-right: 0px;
-}
-section .inner .wrap article h2 {
-  margin-bottom: 10px;
-}
-section .inner .wrap article h2 a {
-  font: bold 16px/1 "arial";
+section .wrap article .desc h2 a {
   color: #555;
 }
-section .inner .wrap article p {
-  font: 14px/1.4 "arial";
+
+section .wrap article .desc p {
+  font-size: 1.1em;
   color: #777;
+  margin-bottom: 20px;
 }
-section .inner .wrap article .pic {
-  width: 100%;
-  height: 120px;
-  background: #333;
-  margin-bottom: 15px;
-  position: relative;
-  overflow: hidden;
+section .wrap article .desc button {
+  width: 150px;
+  height: 35px;
+  background-color: #999;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
-section .inner .wrap article .pic img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-} */
+section .wrap article .desc button:hover {
+  background-color: #777;
+  transition: 0.5s;
+}
 
 /* footer */
 footer {
-  width: 100%;
   background: #333;
   padding: 70px 0px;
-  border-top: 1px solid #888;
+  width: 100%;
 }
 footer .inner {
-  width: 1280px;
-  margin: 0px auto;
+  width: 90%;
+  padding-left: 10%;
 }
 footer .inner .upper {
-  width: 100%;
-  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 20px;
-}
-footer .inner .upper::after {
-  content: "";
-  display: block;
-  clear: both;
+  border-bottom: 1px solid #777;
 }
 footer .inner .upper h1 {
-  float: left;
-  font: bold 24px/1 "arial";
+  font-size: 1.6em;
   color: #666;
 }
 footer .inner .upper ul {
   float: right;
 }
+
 footer .inner .upper ul li {
   float: left;
   margin-left: 20px;
 }
+
 footer .inner .upper ul li a {
-  font: bold 14px/1 "arial";
+  font-size: 1em;
+  font-weight: 500;
   color: #666;
 }
 footer .inner .lower {
-  width: 100%;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 footer .inner .lower address {
-  width: 100%;
-  font: 12px/1.3 "arial";
+  font-size: 1em;
   color: #777;
   margin-bottom: 20px;
 }
 footer .inner .lower p {
   width: 100%;
-  font: 12px/1 "arial";
+  font-size: 1em;
   color: #777;
 }
