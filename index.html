@@ -12,12 +12,16 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/media.css" /> -->
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header>
       <div class="inner">
-        <h1><a href="#">COMPANY</a></h1>
+        <a href="#">COMPANY</a>
+        <!-- 모바일 메뉴 -->
+        <div class="mobile_logo">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <!-- 네비게이션 -->
         <ul id="gnb">
           <li><a href="#">DEPARTMENT</a></li>
@@ -27,11 +31,9 @@
           <li><a href="#">LOCATION</a></li>
         </ul>
       </div>
-      <!-- 모바일 메뉴 -->
-      <div class="mobile_nav">
-        <div class="mobile_logo">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+
+      <!-- <div class="mobile_nav">
+        
         <div class="mobile_menu">
           <ul>
             <li><a href="#">DEPARTMENT</a></li>
@@ -41,7 +43,7 @@
             <li><a href="#">LOCATION</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </header>
     <figure>
       <video src="img/visual.mp4" autoplay muted loop></video>
@@ -57,9 +59,9 @@
       </div>
     </figure>
     <!-- nres -->
-    <section>
+    <section class="news">
       <div class="inner">
-        <h1>RECNET NEWS</h1>
+        <h2>RECNET NEWS</h2>
         <div class="wrap">
           <article>
             <div class="pic">
