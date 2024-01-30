@@ -1,5 +1,7 @@
-$(function () {
-  const mobile_nav = $(".mobile_nav");
-  const mobile_logo = $(".mobile_logo");
-  const mobile_menu = $(".mobile_menu>ul>li");
-});
+function toggleNav() {
+  const navBtn = document.querySelector(".mobile_logo");
+  const gnb = document.querySelector("#gnb");
+
+  gnb.classList.toggle("active");
+  navBtn.classList.toggle("active");
+}
