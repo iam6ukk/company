@@ -21,7 +21,7 @@
 /* 태블릿 규격*/
 @media screen and (max-width: 1040px) {
   header {
-    padding: 20px 20px;
+    padding: 10px 20px;
   }
   header .inner #gnb {
     display: none;
@@ -87,7 +87,7 @@
 /* 모바일 규격 */
 @media screen and (max-width: 520px) {
   header {
-    padding: 20px 20px;
+    padding: 10px 20px;
   }
   header .inner #gnb.active {
     flex-direction: column;
