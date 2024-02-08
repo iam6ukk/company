@@ -29,7 +29,7 @@
 
    ![company_pc_home](https://github.com/iam6ukk/company/assets/84495331/f7965d4b-dae8-43a2-b174-ff81f9d96188)  
    기업 페이지의 첫 화면입니다.  
-   상단의 좌측엔 로고, 우측엔 네비게이션 메뉴를 배치했습니다.
+   상단의 좌측엔 로고, 우측엔 네비게이션 메뉴를 배치했습니다.   
    또한, 백그라운드에 영상을 반복 재생될 수 있도록 했습니다.
 
    <br/>
@@ -43,7 +43,7 @@
 
    ![company_pc_news](https://github.com/iam6ukk/company/assets/84495331/53e36622-3cd4-4bf5-b1ac-f127a75a3ef4)
    스크롤을 내렸을 때도 헤더 영역이 보여질 수 있도록 position을 fixed 해주었습니다.  
-   뉴스들은 박스 형태로 만들어 사진과 제목, 내용을 구분할 수 있게 넣어주었고 버튼 또한 호버 효과를 적용해주었습니다.
+   뉴스들은 박스 형태로 만들어 사진과 제목, 내용을 구분할 수 있게 넣어주었고 버튼 또한 호버 효과를 적용해주었습니다.    
    디스플레이 크기에 따라 자동으로 줄바꿈 처리를 해주기 위해 flex-wrap: wrap을 사용했습니다.
 
    <br/>
@@ -59,7 +59,7 @@
    **Footer**
 
    ![company_pc_footer](https://github.com/iam6ukk/company/assets/84495331/4584d19a-40e1-4976-957e-f377f8c11172)
-   푸터 영역에는 기업명과 메뉴, 주소와 카피라이터를 넣었습니다.
+   푸터 영역에는 기업명과 메뉴, 주소와 카피라이터를 넣었습니다.   
    전체적인 색상을 어두운 색으로 맞추어 기업의 정적인 이미지를 줄 수 있도록 했습니다.
 
    <br/>
@@ -68,13 +68,13 @@
 
    **Main**
 
-   ![company_tablet_home](https://github.com/iam6ukk/company/assets/84495331/15956470-3510-4c59-adda-2ff87374c5e9)
+   ![company_tablet_home](https://github.com/iam6ukk/company/assets/84495331/15956470-3510-4c59-adda-2ff87374c5e9)   
    태블릿에서의 홈 화면입니다.  
    PC의 네비게이션 메뉴는 display: none을 주었고 메뉴 아이콘을 배치하였습니다.
 
    <br/>
 
-   ![company_tablet_header](https://github.com/iam6ukk/company/assets/84495331/cfa9292b-37ed-4614-880e-c7ed52d14b2e)
+   ![company_tablet_header](https://github.com/iam6ukk/company/assets/84495331/cfa9292b-37ed-4614-880e-c7ed52d14b2e)   
    아이콘을 눌렀을 때, 클래스를 추가해 네비게이션 메뉴를 보여줄 수 있도록 기능을 구현했습니다.  
    또한, 아이콘의 색상을 흰색으로 바꾸어 네비게이션 메뉴가 활성화 되었음을 보여줍니다.
 
@@ -82,12 +82,12 @@
 
    **Contact**
 
-   ![company_tablet_contact](https://github.com/iam6ukk/company/assets/84495331/198dfe6e-83f2-44c0-8f34-b45b09ca1dfe)
+   ![company_tablet_contact](https://github.com/iam6ukk/company/assets/84495331/198dfe6e-83f2-44c0-8f34-b45b09ca1dfe)   
    폼 영역은 디스플레이 크기에 맞춰 제목과 폼 박스가 가운데로 정렬될 수 있도록 했습니다.
 
    <br/>
 
-3. 모바일 (최대 520px)
+4. 모바일 (최대 520px)
 
    **Main**
 
